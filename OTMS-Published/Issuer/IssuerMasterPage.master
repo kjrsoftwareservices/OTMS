@@ -1,0 +1,150 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="IssuerMasterPage.master.cs" Inherits="IssuerMasterPage" %>
+
+
+<html>
+<head runat="server">
+
+    <title>Issuer</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <form runat="server">
+        <!-- Begin Wrapper -->
+        <div id="wrapper">
+
+            <!-- Begin Header -->
+
+            <div id="header">
+
+                <div class="logo">
+                    <h1 id="lineone">Online Tender Management System </h1>
+                    <h2 id="linetwo">it makes u easy bussiness</h2>
+                </div>
+
+
+            </div>
+            <!-- End Header -->
+
+
+            <!-- Begin Navigation -->
+            <div id="navigation">
+
+                <%--<div class="menu">
+
+	        <ul>
+			<li><a href="frmIssuerHome.aspx" title="#"> Home</a></li>
+			<li><a href="frmItemPreperationForIssue.aspx" title="#">Tender Preperation</a></li>
+			<li><a href="frmUpdateProfile.aspx"title="#">Edit Profile</a></li>
+
+                        <li><a href="frmChangePassword.aspx" title="#">Change Password</a></li>
+                        <li><a href="#" title="#"></a>
+                            <asp:LinkButton ID="lbtnLogout" runat="server" onclick="lbtnLogout_Click" 
+                                ValidationGroup="l">Logout</asp:LinkButton></li>
+		</ul>
+	</div>--%>
+
+
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+
+                        <ul class="nav navbar-nav">
+
+
+                            <li><a href="frmIssuerHome.aspx" title="#">Home</a></li>
+                            <li><a href="frmItemPreperationForIssue.aspx" title="#">Tender Preperation</a></li>
+                            <li><a href="frmUpdateProfile.aspx" title="#">Edit Profile</a></li>
+
+                            <li><a href="frmChangePassword.aspx" title="#">Change Password</a></li>
+                            <li>
+                                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="lbtnLogout_Click"
+                                    ValidationGroup="l">Logout</asp:LinkButton></li>
+                        </ul>
+                    </div>
+                </nav>
+
+
+
+            </div>
+            <!-- End Navigation -->
+
+            <!-- Begin Left Column -->
+            <%--<div id="leftcolumn">
+
+
+                <div id="leftbox">
+
+                    <div class="col-l">
+                        <ul>
+                            <li><a href="frmIssuerHome.aspx" title="free business templates">Home</a></li>
+                            <li><a href="frmChangePassword.aspx" title="earn money online">Change Password</a></li>
+                            <li><a href="frmUpdateProfile.aspx" title="#">Edit Profile</a></li>
+                            <li><a href="frmItemPreperationForIssue.aspx" title="#">Tender Preperation</a></li>
+
+                            <li><a href="#" title="#">Link Five</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="leftboxbottom"></div>
+
+                <br />
+
+                <div id="leftbox-2">
+
+                    <div class="col-l">
+
+                        <asp:Image ID="Image1" runat="server"
+                            Height="237px" Width="166px" ImageUrl="~/images/Laptop_400x400.gif" />
+
+
+                        <%--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec rutrum neque eu nisl. Morbi eget felis. Vestibulum feugiat lectus ut magna. Ut interdum <a href="#">ipsum nec metus</a>. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eget augue .</p>
+                    </div>
+                </div>
+                <div id="leftboxbottom-2"></div>
+
+            </div>--%>
+
+
+
+            <div class="sidenav" id="leftcolumn">
+                <a href="frmIssuerHome.aspx" title="free business templates">Home</a>
+                <a href="frmChangePassword.aspx" title="earn money online">Change Password</a>
+                <a href="frmUpdateProfile.aspx" title="#">Edit Profile</a>
+                <a href="frmItemPreperationForIssue.aspx" title="#">Tender Preperation</a>
+            </div>
+
+
+
+
+
+            <!-- End Left Column -->
+
+            <!-- Begin Right Column -->
+
+            <div id="rightcolumn">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <!-- End Right Column -->
+
+            <!-- Begin Footer -->
+            <div id="footer">
+                <p id="legal">CopyRightsReserved</p>
+
+                <%--<p id="legal">Copyright &copy; 2007  by Free CSS Templates  Designed by <a href="http://www.businesswebsitetemplates.blogspot.com">FEEE CSS TEMPLATES</a>.</p>--%>
+            </div>
+            <!-- End Footer -->
+
+        </div>
+
+        <!-- End Wrapper -->
+    </form>
+
+</body>
+</html>
+

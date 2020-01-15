@@ -1,0 +1,96 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="EmployeeMasterPage.master.cs" Inherits="EmployeeMasterPage" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+
+    <title>Employee</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <form runat="server">
+
+        <!-- Begin Wrapper -->
+        <div id="wrapper">
+
+            <!-- Begin Header -->
+
+            <div id="header">
+
+                <div class="logo">
+                    <h1 id="lineone">Online Tender Management System </h1>
+                    <h2 id="linetwo">it makes u easy bussiness</h2>
+                </div>
+
+
+            </div>
+            <!-- End Header -->
+
+
+            <!-- Begin Navigation -->
+            <div id="navigation">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+
+                        <ul class="nav navbar-nav">
+
+                            <li><a href="frmEmpHome.aspx" title="#">Home</a></li>
+                            <li><a href="frmItemAproveForIssuer.aspx" title="#">Approve Item</a></li>
+			<li><a href="frmEditProfile.aspx" title ="#">Edit Profile</a></li>
+
+                        <li><a href="frmChangePassword.aspx" title="#">Change Password</a></li>
+                        <li>
+                            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="lbtnLogout_Click"
+                                    ValidationGroup="l">Logout</asp:LinkButton></li>
+
+
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+            <!-- End Navigation -->
+
+            <!-- Begin Left Column -->
+           
+            <!-- End Left Column -->
+
+            <div class="sidenav" id="leftcolumn">
+                <a href="frmEmpHome.aspx" title="Home">Home</a>
+                <a href="frmChangePassword.aspx" title="Change Password">Change Password</a>
+                <a href="frmEditProfile.aspx" title="#">Edit Profile</a>
+                <a href="frmItemAproveForIssuer.aspx" title="#">AproveForIssuer</a>
+            </div>
+
+
+            <!-- Begin Right Column -->
+
+            <div id="rightcolumn">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <!-- End Right Column -->
+
+            <!-- Begin Footer -->
+            <div id="footer">
+                <p id="legal">CopyRightsReserved</p>
+
+                <%--<p id="legal">Copyright &copy; 2007  by Free CSS Templates  Designed by <a href="http://www.businesswebsitetemplates.blogspot.com">FEEE CSS TEMPLATES</a>.</p>--%>
+            </div>
+            <!-- End Footer -->
+
+        </div>
+
+        <!-- End Wrapper -->
+    </form>
+</body>
+</html>
+

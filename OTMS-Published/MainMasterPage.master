@@ -1,0 +1,161 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMasterPage.master.cs" Inherits="MainMasterPage" %>
+
+
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <form runat="server">
+
+
+
+
+
+
+        <!-- Begin Wrapper -->
+        <div id="wrapper">
+
+            <!-- Begin Header -->
+
+            <div id="header">
+
+                <div class="logo">
+                    <h1 id="lineone">Online Tender Management System </h1>
+                    <%--<h2 id="linetwo">it makes u easy bussiness</h2>--%>
+                </div>
+
+
+            </div>
+            <!-- End Header -->
+
+
+            <!-- Begin Navigation -->
+            <div id="navigation">
+
+
+
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+
+                        <ul class="nav navbar-nav">
+
+                            <li><a href="Default.aspx" title="#">Home</a></li>
+                            <li><a href="frmAboutUs.aspx" title="#">About Us</a></li>
+                            <li><a href="frmContactUs.aspx" title="#">Contact Us</a></li>
+
+                            <li><a href="frmShowTenders.aspx" title="#">Tenders</a></li>
+                            <li><a href="Supplier/frmSupplierHome.aspx" title="#">Supplier</a></li>
+                            <li><a href="Employee/frmEmpHome.aspx" title="#">Employee</a></li>
+
+                            <li><a href="Issuer/frmIssuerHome.aspx" title="#">Issuer</a></li>
+
+                            <li><a href="Admin/frmWelcomeAdmin.aspx" title="#">Admin</a></li>
+
+
+                        </ul>
+                    </div>
+                </nav>
+
+
+
+
+
+
+                <%-- <div class="menu">
+
+                    <ul>
+                        <li><a href="Default.aspx" title="#">Home</a></li>
+                        <li><a href="frmAboutUs.aspx" title="#">About Us</a></li>
+                        <li><a href="frmContactUs.aspx" title="#">Contact Us</a></li>
+
+                        <li><a href="frmShowTenders.aspx" title="#">Tenders</a></li>
+                        <li><a href="Supplier/frmSupplierHome.aspx" title="#">Supplier</a></li>
+                        <li><a href="Employee/frmEmpHome.aspx" title="#">Employee</a></li>
+
+                        <li><a href="Issuer/frmIssuerHome.aspx" title="#">Issuer</a></li>
+
+                        <li><a href="Admin/frmWelcomeAdmin.aspx" title="#">Admin</a></li>
+
+                    </ul>
+                </div>--%>
+            </div>
+            
+            <!-- End Navigation -->
+
+            <!-- Begin Left Column -->
+          <%--  <div id="leftcolumn">
+
+
+                <div id="leftbox">
+
+                    <div class="col-l">
+                        <ul>
+                            <li class="btn-link"><a href="Default.aspx" title="#">Home</a></li>
+                            <li><a href="frmSearchByKeyWord.aspx" title="#">Search By Keyword</a></li>
+                            <li><a href="frmSearchBitTwoDates.aspx" title="earn money online">Search B/W 2 Dates</a></li>
+                            <li><a href="frmTodaysTenders.aspx" title="#">Todays Tenders</a></li>
+
+
+                            <li><a href="frmShowTenders.aspx" title="#">Show All Tenders</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="leftboxbottom"></div>
+
+                <br />
+
+                <div id="leftbox-2">
+
+                    <div class="col-l">
+
+                        <p>This is the site is used for e procure system for our organigation,its makes easy business <a href="#">Online Tender Management System </a>. For participating every one should register,only register users can bid no register users can see the tenders but they can't bid.Please register for bidding .</p>
+                    </div>
+                </div>
+                <div id="leftboxbottom-2"></div>
+
+            </div>--%>
+            <!-- End Left Column -->
+            <div class="sidenav" id="leftcolumn">
+                <a href="Default.aspx" title="#">Home</a>
+                <a href="frmSearchByKeyWord.aspx" title="#">Search By Keyword</a>
+                <a href="frmSearchBitTwoDates.aspx" title="earn money online">Search B/W 2 Dates</a>
+                <a href="frmTodaysTenders.aspx" title="#">Todays Tenders</a>
+
+
+                <%--<a href="frmShowTenders.aspx" title="#">Show All Tenders</a>--%>
+            </div>
+
+
+
+
+
+            <!-- Begin Right Column -->
+
+            <div id="rightcolumn" style="padding: 10px;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <!-- End Right Column -->
+
+            <!-- Begin Footer -->
+            <div id="footer">
+
+                <p id="legal">CopyRightsReserved</p>
+            </div>
+            <!-- End Footer -->
+
+        </div>
+
+        <!-- End Wrapper -->
+    </form>
+</body>
+</html>
